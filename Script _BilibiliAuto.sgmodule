@@ -1,0 +1,9 @@
+#!name=OCD iOS Bili_Auto_Regions Script Module
+#!desc=iOS Script Bilibili 自动切换地区 模块配置
+#!system=ios
+
+[Script]
+Bili Region = type=http-response,pattern=https:\/\/api\.bilibili\.com\/pgc\/view\/app\/season\?access_key,requires-body=1,max-size=0,control-api=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+
+[MITM]
+hostname = %APPEND% api.bilibili.com
