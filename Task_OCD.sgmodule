@@ -1,6 +1,5 @@
 #!name=OCD iOS Tasks Module
 #!desc=iOS Tasks 模块配置
-#!system=ios
 
 [Script]
 cron "7 0 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jingxi.js, tag=京喜
