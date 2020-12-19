@@ -1,9 +1,10 @@
-#!name=OCD JD 多账号获取
+#!name=OCD JD 多账号获取/小米运动cookie获取
 #!desc=多账号获取
 #!system=ios
 
 [Script]
 获取京东Cookie = type=http-request,pattern=^https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/JD_extra_cookie.js,script-update-interval=0
+小米运动获取Token = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmSports.js
 
 [MITM]
-hostname = %APPEND% wq.jd.com
+hostname = %APPEND% wq.jd.com, account.huami.com
