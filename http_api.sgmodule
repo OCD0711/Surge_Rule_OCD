@@ -1,0 +1,6 @@
+#!name=开启 http-api
+#!desc=开启 http-api by ocd
+
+[General]
+http-api = OCD@0.0.0.0:6166
+external-controller-access = Aa238620@0.0.0.0:6170
