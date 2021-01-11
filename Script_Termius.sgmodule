@@ -2,7 +2,7 @@
 #!desc=Termius 解锁
 
 [Script]
-http-response https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/OCD0711/Script/master/Termius.js
+http-response https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/OCD0711/Surge_Rule_OCD/master/Termius.js
 
 [MITM]
 hostname = %APPEND% api.termius.com
