@@ -5,6 +5,6 @@
 http-api = OCD@0.0.0.0:6166
 external-controller-access = Aa238620@0.0.0.0:6170
 http-listen = 0.0.0.0:7890
-socks5-listen = 0.0.0.0:7890
+socks5-listen = 0.0.0.0:7891
 wifi-access-http-port = 7890
-wifi-access-socks5-port = 7890
+wifi-access-socks5-port = 7891
