@@ -1,10 +1,9 @@
-#!name=OCD iOS Cookies Module 来客有礼
-#!desc=iOS Cookies 模块配置 来客有礼
+#!name=OCD iOS Cookies Module
+#!desc=iOS Cookies JD
 #!system=ios
 
 [Script]
-宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code=, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
-宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId=, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.j
+获取多账号京东Cookie = type=http-request,pattern=^https:\/\/me-api\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/JD_extra_cookie.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% draw.jdfcloud.com
+hostname = %APPEND% me-api.jd.com, draw.jdfcloud.com, jdjoy.jd.com
